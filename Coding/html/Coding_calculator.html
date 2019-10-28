@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java - Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../Main_page/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149871373-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149871373-1');
+</script>
+
+</head>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+a:link{
+text-decoration: none;
+}
+</style>
+<body>
+<div class="w3-blue">
+<div class="w3-content">
+    <div class="w3-container">
+        <!-- Main -->
+        <div class="w3-container w3-content w3-center w3-padding-large w3-margin-top">
+            <a href="../html/Coding.html"><p1 class="w3-jumbo" >#coding</p1></a>
+            <p style="margin-top:-12px">moje postępy w programowaniu</p></div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="w3-content w3-container">
+        <div class="w3-center">
+            <div class="w3-bar">
+                <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="../html/Coding.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>strona główna</p1></a>
+                <div class="w3-dropdown-hover w3-hide-small w3-bar-item w3-padding-large w3-border-bottom w3-border-white">
+
+                    <p1>programowanie</p1><i class="fa fa-caret-down w3-margin-left"></i>
+
+                    <div class="w3-dropdown-content w3-bar-block">
+                        <a href="../html/Coding_why.html" class="w3-bar-item"><p1>po co</p1></a>
+                        <a href="../html/Coding_articles.html" class="w3-bar-item"><p1>wpisy</p1></a>
+                    </div>
+                </div>
+                <a href="../html/Coding_books.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>książki</p1></a>
+                <a href="../html/Coding_websites.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>przydatne strony</p1></a>
+                <a href="../html/Contact.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>kontakt</p1></a>
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center w3-padding-large" style="margin-top:0px">
+            <a href="../html/Coding.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>strona główna</p1></a>
+            <a href="../html/Coding_why.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>programowanie</p1></a>
+            <a href="../html/Coding_books.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>książki</p1></a>
+            <a href="../html/Coding_websites.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>przydatne strony</p1></a>
+            <a href="../html/Contact.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>kontakt</p1></a>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div class="w3-container w3-middle w3-margin-top w3-margin-bottom" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding" style="margin-bottom: 30px;">
+            <!-- Column-->
+            <div class="w3-card w3-white w3-margin-bottom">
+                <div class="w3-container">
+                    <h3 class="w3-padding-16 w3-center">Kalkulator - Java</h3>
+                </div>
+                <div class="w3-display-container w3-center">
+                        <img src="../img/calculator-2374442_1280.png" style="width:50%"></div>
+                <div class="w3-container">
+                    <div class="w3-left w3-justify">
+                    <p><b>#coding #java</b></p>
+                        <p><i class="fa fa-calendar fa-fw"></i>02.10.2019</p>
+                            <p>Pierwszym programem, no dobra drugim bo pierwszym było "Hello World!" ;), był kalkulator. Cały kod jest dostępny na moim GitHub'ie pod
+                                tym <a href="https://github.com/mfordas/Calculator"><b>linkiem</b></a>.</p>
+                        <p>Bardzo prosty programik, wykonujący cztery podstawowe działania. Wersja kodu wrzucona na GitHub'a jest trzecią lub czwartą. 
+                            Wcześniejsze wersje sprawdzał mi kolega programista (Paweł pozdrawiam Cię z tego miejsca i dzięki za cierpliwość) i mówił co można jeszcze poprawić.</p>
+                        <p>Ostateczna wersja różni się głównie tym, że zastosowałem w niej Interfejs z metodą wykonującą ogólne działanie na dwóch liczbach:</p>
+                        <div class="w3-container">
+                            <p class=" w3-panel w3-black">public interface CalcCommand {<br>
+                            public double evaluate(String a, double c, double d);<br>
+                            public static final String ADD = "+";<br>
+                            public static final String MINUS = "-";<br>
+                            public static final String MULTIPLY = "*";<br>
+                            public static final String DIVIDE = "/";<br>
+                            public static final String RESET = "C";<br>
+                                }<br></p>
+                        </div>
+                        <p>Teraz od razu komentarz - w interfejsach nie nie trzeba pisać modyfikatorów dostępu 'public', 'static', 'final' ponieważ w interfejsach wszystkie metody są publiczne, a stałe
+                            statyczne i finalne.</p>
+                        <p>Brakuje na pewno obsługi błędów, bo o ile program wyłapuje, że wprowadzono zły symbol działania to zamiast poprosić o 
+                            podanie prawidłowego - po prostu się wyłącza.</p>
+                        <p>Druga sprawa to testy. Napisałem kilka testów jednostkowych JUnit ale czy to jest wystarczające nie jestem pewien.</p>
+                        <div class="w3-container">
+                            <p class=" w3-panel w3-black">
+                            class CommandTest {<br>
+                            private String a;<br>
+                            private double c = 3;<br>
+                            private double d = 2;<br>
+                            <br>
+                            AddCommand add = new AddCommand(c,d);<br>
+                            MinusCommand minus = new MinusCommand(c,d);<br>
+                            MultiplyCommand multiply = new MultiplyCommand(c,d);<br>
+                            DivideCommand divide = new DivideCommand(c,d);<br>
+                            <br>
+                            @Test<br>
+                            void evaluateAdd() {<br>
+                            <br>
+                            a = CalcCommand.ADD;<br>
+                            assertTrue(a.equalsIgnoreCase("+"));<br>
+                            assertEquals(5,add.evaluate(a,c,d));<br>
+                            }<br>
+                            <br>
+                            @Test<br>
+                            void evaluateMinus() {<br>
+                            <br>
+                            a = CalcCommand.MINUS;<br>
+                            assertTrue(a.equalsIgnoreCase("-"));<br>
+                            assertEquals(1,minus.evaluate(a,c,d));<br>
+                            }
+                            <br>
+                            @Test<br>
+                            void evaluateMultiply() {<br>
+                            <br>
+                            a = CalcCommand.MULTIPLY;<br>
+                            assertTrue(a.equalsIgnoreCase("*"));<br>
+                            assertEquals(6,multiply.evaluate(a,c,d));<br>
+                            }
+                            <br>
+                            @Test<br>
+                            void evaluateDivide() {<br>
+                            <br>
+                            a = CalcCommand.DIVIDE;<br>
+                            assertTrue(a.equalsIgnoreCase("/"));<br>
+                            assertEquals(1.5,divide.evaluate(a,c,d));<br>
+                            }<br>
+                            <br>
+
+                                }<br></p>
+                        </div>
+                        <p>Jeśli ktoś ma jakieś uwagi to chętnie porozmawiam. Zapraszam do kontaktu mailowo lub przez LinkedIn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- footer -->
+<div class="w3-bottom">
+    <footer class="w3-container w3-black w3-center w3-margin-top" style="font-size: 10pt;">
+        <div><div class="w3-show-inline-block w3-margin-right"><a href="../../Main_page/Main.html"><p class="w3-show-inline-block">Menu</p></a>
+            <a href="../../Main_page/Main.html">
+                <i class="fa fa-square w3-hover-opacity w3-show-inline-block"></i>
+            </a></div>
+            <p class="w3-show-inline-block w3-hide-small w3-margin-right">Visit me also:</p>
+            <div class="w3-show-inline-block w3-margin-right">
+                <a href="https://www.linkedin.com/in/mateusz-fordas/" target="_blank">
+                    <p class="w3-show-inline-block">LinkedIn</p>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                </a></div>
+            <div class="w3-show-inline-block w3-margin-right">
+                <a href="https://github.com/mfordas" target="_blank">
+                    <p class="w3-show-inline-block">GitHub</p>
+                    <i class="fa fa-github fa-fw w3-hover-opacity"></i>
+                </a></div>
+            <div class="w3-show-inline-block">
+                <p class="w3-hide-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></div>
+        </div>
+    </footer></div>
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}</script>
+</body>
+</html>
