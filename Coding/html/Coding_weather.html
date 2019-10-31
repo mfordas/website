@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Pogoda - Java</title>
     <meta charset="UTF-8">
@@ -10,159 +11,219 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149871373-1"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-149871373-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149871373-1');
+    </script>
 
 </head>
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-a:link{
-text-decoration: none;
-}
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif
+    }
+
+    a:link {
+        text-decoration: none;
+    }
 </style>
+
 <body>
-<div class="w3-blue">
-<div class="w3-content">
-    <div class="w3-container">
-        <!-- Main -->
-        <div class="w3-container w3-content w3-center w3-padding-large w3-margin-top">
-            <a href="../html/Coding.html"><p1 class="w3-jumbo" >#coding</p1></a>
-            <p style="margin-top:-12px">moje postępy w programowaniu</p></div>
-    </div>
-    <!-- Navigation Bar -->
-    <div class="w3-content w3-container">
-        <div class="w3-center">
-            <div class="w3-bar">
-                <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <a href="../html/Coding.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>strona główna</p1></a>
-                <div class="w3-dropdown-hover w3-hide-small w3-bar-item w3-padding-large w3-border-bottom w3-border-white">
-
-                    <p1>programowanie</p1><i class="fa fa-caret-down w3-margin-left"></i>
-
-                    <div class="w3-dropdown-content w3-bar-block">
-                        <a href="../html/Coding_why.html" class="w3-bar-item"><p1>po co</p1></a>
-                        <a href="../html/Coding_articles.html" class="w3-bar-item"><p1>wpisy</p1></a>
-                    </div>
+    <div class="w3-blue">
+        <div class="w3-content">
+            <div class="w3-container">
+                <!-- Main -->
+                <div class="w3-container w3-content w3-center w3-padding-large w3-margin-top">
+                    <a href="../html/Coding.html">
+                        <p1 class="w3-jumbo">#coding</p1>
+                    </a>
+                    <p style="margin-top:-12px">moje postępy w programowaniu</p>
                 </div>
-                <a href="../html/Coding_books.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>książki</p1></a>
-                <a href="../html/Coding_websites.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>przydatne strony</p1></a>
-                <a href="../html/Contact.html" class="w3-bar-item w3-padding-large w3-hide-small"><p1>kontakt</p1></a>
             </div>
-        </div>
+            <!-- Navigation Bar -->
+            <div class="w3-content w3-container">
+                <div class="w3-center">
+                    <div class="w3-bar">
+                        <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+                            onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                        <a href="../html/Coding.html" class="w3-bar-item w3-padding-large w3-hide-small">
+                            <p1>strona główna</p1>
+                        </a>
+                        <div
+                            class="w3-dropdown-hover w3-hide-small w3-bar-item w3-padding-large w3-border-bottom w3-border-white">
 
-        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-        <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center w3-padding-large" style="margin-top:0px">
-            <a href="../html/Coding.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>strona główna</p1></a>
-            <a href="../html/Coding_why.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>programowanie</p1></a>
-            <a href="../html/Coding_books.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>książki</p1></a>
-            <a href="../html/Coding_websites.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>przydatne strony</p1></a>
-            <a href="../html/Contact.html" class="w3-bar-item w3-padding-large" onclick="myFunction()"><p1>kontakt</p1></a>
-        </div>
-    </div>
-    <!-- Main content -->
-    <div class="w3-container w3-middle w3-margin-top w3-margin-bottom" style="max-width:1400px;">
+                            <p1>programowanie</p1><i class="fa fa-caret-down w3-margin-left"></i>
 
-        <!-- The Grid -->
-        <div class="w3-row-padding" style="margin-bottom: 30px;">
-            <!-- left column-->
-            <div class="w3-card w3-white w3-margin-bottom">
-                <div class="w3-container">
-                    <h3 class="w3-padding-16 w3-center">Pogoda - Java</h3>
+                            <div class="mf-dropdown-content mf-bar-block">
+                                <a href="../html/Coding_why.html" class="w3-blue mf-bar-item w3-hover-white">
+                                    <p1 class="mf-border-right">po co</p1>
+                                </a>
+                                <a href="../html/Coding_articles.html" class="w3-blue mf-bar-item w3-hover-white ">
+                                    <p1 class="mf-border-right">wpisy</p1>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="../html/Coding_books.html" class="w3-bar-item w3-padding-large w3-hide-small">
+                            <p1>książki</p1>
+                        </a>
+                        <a href="../html/Coding_websites.html" class="w3-bar-item w3-padding-large w3-hide-small">
+                            <p1>przydatne strony</p1>
+                        </a>
+                        <a href="../html/Contact.html" class="w3-bar-item w3-padding-large w3-hide-small">
+                            <p1>kontakt</p1>
+                        </a>
+                    </div>
                 </div>
-                <div class="w3-display-container w3-center">
-                        <img src="../img/weather.png" style="width:90%"></div>
-                <div class="w3-container">
-                    <div>
-                        <p class="w3-left"><b>#coding #java</b></p>
-                    </div>
-                    <div>
-                        <p class="w3-left" style="width:100%;"><i class="fa fa-calendar fa-fw"></i>23.10.2019</p>
-                    </div>
-                    <div>
-                        <p class="w3-left w3-justify" style="width:100%;">Kolejną aplikacją, którą napisałem w języku Java była Pogoda.
-                            Umożliwia ona sprawdzenie pogody dla wybranego miasta. Jest to również wersja konsolowa.
-                        </p>
-                        <p class="w3-left w3-justify" style="width:100%;">
-                            Pogoda odczytywana jest z API <a href="https://openweathermap.org/" target="_blank"><b>OpenWeatherMap.org</b></a>. 
-                            Z dostępnych parametrów wybrałem: temperaturę, temp. maksymalną, temp. minimalną, ciśnienie i wilgotność.
-                        </p>
-                        <p class="w3-left w3-justify" style="width:100%;">
-                            W sumie program bardzo prosty ale dzięki niemu dowiedziałem się co to jest REST API i jak można je wykorzystać 
-                            oraz co to jest parsowanie. 
-                        </p>
-                        <p class="w3-left w3-justify" style="width:100%;">
-                                Aplikacja wysyła zapytanie do API OpenWeatherMap a następnie dostaje odpowiedź w postaci pliku .json, 
-                                który jest parsowany za pomocą Gsona. Poniżej kawałek kodu odpowiedzialny za połączenie ze stroną i wysłanie zapytania.
-                            </p>
+
+                <!-- Navbar on small screens -->
+                <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center w3-padding-large"
+                    style="margin-top:0px">
+                    <a href="../html/Coding.html" class="w3-bar-item w3-padding-large" onclick="myFunction()">
+                        <p1>strona główna</p1>
+                    </a>
+                    <a href="../html/Coding_why.html" class="w3-bar-item w3-padding-large" onclick="myFunction()">
+                        <p1>programowanie</p1>
+                    </a>
+                    <a href="../html/Coding_books.html" class="w3-bar-item w3-padding-large" onclick="myFunction()">
+                        <p1>książki</p1>
+                    </a>
+                    <a href="../html/Coding_websites.html" class="w3-bar-item w3-padding-large" onclick="myFunction()">
+                        <p1>przydatne strony</p1>
+                    </a>
+                    <a href="../html/Contact.html" class="w3-bar-item w3-padding-large" onclick="myFunction()">
+                        <p1>kontakt</p1>
+                    </a>
+                </div>
+            </div>
+            <!-- Main content -->
+            <div class="w3-container w3-middle w3-margin-top w3-margin-bottom" style="max-width:1400px;">
+
+                <!-- The Grid -->
+                <div class="w3-row-padding" style="margin-bottom: 30px;">
+                    <!-- article -->
+                    <div class="w3-card w3-white w3-margin-bottom">
                         <div class="w3-container">
-                            <p class=" w3-panel w3-black">public class HttpConnection {<br>
-                                <br>
-                                    private static final String API_URL = "https://api.openweathermap.org/data/2.5/weather";<br>
-                                    private static final String CHARSET = "UTF-8";<br>
-                                    private static final String API_KEY = "f051a3a6eaeb0d3041fa073c40a73a0c";<br>
-                                    <br>
-                                
-                                    public String callWeatherForCity(String city) throws IOException {<br>
+                            <h3 class="w3-padding-16 w3-center">Pogoda - Java</h3>
+                        </div>
+                        <div class="w3-display-container w3-center">
+                            <img src="../img/weather.png" style="width:90%"></div>
+                        <div class="w3-container">
+                            <div>
+                                <p class="w3-left"><b>#coding #java</b></p>
+                            </div>
+                            <div>
+                                <p class="w3-left" style="width:100%;"><i class="fa fa-calendar fa-fw"></i>23.10.2019
+                                </p>
+                            </div>
+                            <div>
+                                <p class="w3-left w3-justify" style="width:100%;">Kolejną aplikacją, którą napisałem w
+                                    języku Java była Pogoda.
+                                    Umożliwia ona sprawdzenie pogody dla wybranego miasta. Jest to również wersja
+                                    konsolowa.
+                                </p>
+                                <p class="w3-left w3-justify" style="width:100%;">
+                                    Pogoda odczytywana jest z API <a href="https://openweathermap.org/"
+                                        target="_blank"><b>OpenWeatherMap.org</b></a>.
+                                    Z dostępnych parametrów wybrałem: temperaturę, temp. maksymalną, temp. minimalną,
+                                    ciśnienie i wilgotność.
+                                </p>
+                                <p class="w3-left w3-justify" style="width:100%;">
+                                    W sumie program bardzo prosty ale dzięki niemu dowiedziałem się co to jest REST API
+                                    i jak można je wykorzystać
+                                    oraz co to jest parsowanie.
+                                </p>
+                                <p class="w3-left w3-justify" style="width:100%;">
+                                    Aplikacja wysyła zapytanie do API OpenWeatherMap a następnie dostaje odpowiedź w
+                                    postaci pliku .json,
+                                    który jest parsowany za pomocą Gsona. Poniżej kawałek kodu odpowiedzialny za
+                                    połączenie ze stroną i wysłanie zapytania.
+                                </p>
+                                <div class="w3-container">
+                                    <p class=" w3-panel w3-black">public class HttpConnection {<br>
+                                        <br>
+                                        private static final String API_URL =
+                                        "https://api.openweathermap.org/data/2.5/weather";<br>
+                                        private static final String CHARSET = "UTF-8";<br>
+                                        private static final String API_KEY = "f051a3a6eaeb0d3041fa073c40a73a0c";<br>
+                                        <br>
+
+                                        public String callWeatherForCity(String city) throws IOException {<br>
                                         String query = String.format("q=%s", URLEncoder.encode(city, CHARSET));<br>
-                                        URLConnection connection = new URL(API_URL + "?" + query + "&units=metric" + "&appid=" + API_KEY).openConnection();<br>
+                                        URLConnection connection = new URL(API_URL + "?" + query + "&units=metric" +
+                                        "&appid=" + API_KEY).openConnection();<br>
                                         connection.setRequestProperty("Accept-charset", CHARSET);<br>
-                                
+
                                         InputStream response = connection.getInputStream();<br>
                                         return convertStreamToString(response);<br>
-                                    }
-                                    <br>
-                                    private static String convertStreamToString(InputStream is) {<br>
+                                        }
+                                        <br>
+                                        private static String convertStreamToString(InputStream is) {<br>
                                         Scanner scan = new Scanner(is).useDelimiter("\\A");<br>
                                         return scan.hasNext() ? scan.next() : "";<br>
-                                    }<br>
-                                }<br>
+                                        }<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                                <p class="w3-left w3-justify" style="width:100%;">
+                                    Cały kod jest dostępny na moim GitHubie. Jak zwykle zachęcam do kontaktu.
                                 </p>
+                            </div>
                         </div>
-                        <p class="w3-left w3-justify" style="width:100%;">
-                            Cały kod jest dostępny na moim GitHubie. Jak zwykle zachęcam do kontaktu.
-                        </p>
                     </div>
                 </div>
             </div>
-                </div>
         </div>
-</div>
-</div>
-<!-- footer -->
-<div class="w3-bottom">
-    <footer class="w3-container w3-black w3-center w3-margin-top" style="font-size: 10pt;">
+    </div>
+    <!-- footer -->
+    <div class="w3-bottom">
+        <footer class="w3-container w3-black w3-center w3-margin-top" style="font-size: 10pt;">
 
-        <div><div class="w3-show-inline-block w3-margin-right"><a href="../../Main_page/Main.html"><p class="w3-show-inline-block">Menu</p></a>
-            <a href="../../Main_page/Main.html">
-                <i class="fa fa-square w3-hover-opacity w3-show-inline-block"></i>
-            </a></div>
-            <p class="w3-show-inline-block w3-hide-small w3-margin-right">Visit me also:</p>
-            <div class="w3-show-inline-block w3-margin-right">
-                <a href="https://www.linkedin.com/in/mateusz-fordas/" target="_blank">
-                    <p class="w3-show-inline-block">LinkedIn</p>
-                    <i class="fa fa-linkedin w3-hover-opacity"></i>
-                </a></div>
-            <div class="w3-show-inline-block w3-margin-right">
-                <a href="https://github.com/mfordas" target="_blank">
-                    <p class="w3-show-inline-block">GitHub</p>
-                    <i class="fa fa-github fa-fw w3-hover-opacity"></i>
-                </a></div>
-            <div class="w3-show-inline-block">
-                <p class="w3-hide-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></div>
-        </div>
-    </footer></div>
-<script>
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}</script>
+            <div>
+                <div class="w3-show-inline-block w3-margin-right"><a href="../../Main_page/Main.html">
+                        <p class="w3-show-inline-block">Menu</p>
+                    </a>
+                    <a href="../../Main_page/Main.html">
+                        <i class="fa fa-square w3-hover-opacity w3-show-inline-block"></i>
+                    </a></div>
+                <p class="w3-show-inline-block w3-hide-small w3-margin-right">Visit me also:</p>
+                <div class="w3-show-inline-block w3-margin-right">
+                    <a href="https://www.linkedin.com/in/mateusz-fordas/" target="_blank">
+                        <p class="w3-show-inline-block">LinkedIn</p>
+                        <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    </a></div>
+                <div class="w3-show-inline-block w3-margin-right">
+                    <a href="https://github.com/mfordas" target="_blank">
+                        <p class="w3-show-inline-block">GitHub</p>
+                        <i class="fa fa-github fa-fw w3-hover-opacity"></i>
+                    </a></div>
+                <div class="w3-show-inline-block">
+                    <p class="w3-hide-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+                            target="_blank">w3.css</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
 </body>
+
 </html>

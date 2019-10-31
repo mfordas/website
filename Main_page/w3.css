@@ -230,5 +230,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+/* Additional rules */
 .mf-padding{padding:8px 8px!important}
 .mf-margin-reduce{margin-top:2px;}
+.mf-bar-block .mf-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:small;float:none;outline:0}
+.mf-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:80px;margin:0;padding:0;z-index:1;}
+.w3-bar-block .w3-dropdown-hover .mf-dropdown-content,.w3-bar-block .w3-dropdown-click .mf-dropdown-content{min-width:100%}
+.w3-dropdown-hover.w3-mobile .mf-dropdown-content,.w3-dropdown-click.w3-mobile .mf-dropdown-content{position:relative}
+.w3-dropdown-hover:hover .mf-dropdown-content{display:block}

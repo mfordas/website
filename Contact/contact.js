@@ -25,7 +25,7 @@ $(document).ready(function() {
     }
     else {
     event.preventDefault()
-    statusEmail.append('<div>Błędny e-mail. Użyj maila w formacie mail@mail.com</div>')
+    statusEmail.append('<div style="color: #ff6347;">Błędny e-mail. Użyj maila w formacie mail@mail.com</div>')
     }
 
     if(firstname.length >=2) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
     }
     else {
     event.preventDefault()
-    statusFirstName.append('<div>Imię powinno mieć więcej niż dwa znaki.</div>')
+    statusFirstName.append('<div style="color: #ff6347;">Imię powinno mieć więcej niż dwa znaki.</div>')
     }
 
     if(subject.length >=5) {
@@ -41,7 +41,7 @@ $(document).ready(function() {
     }
     else {
     event.preventDefault()
-    statusSubject.append('<div>Temat powinien mieć wiecej niż 5 znaków.</div>')
+    statusSubject.append('<div style="color: #ff6347;">Temat powinien mieć wiecej niż 5 znaków.</div>')
     }
 
     if(message.length >=5) {
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
     else {
     event.preventDefault()
-    statusMessage.append('<div>Wiadmość powinna zawierać co najmniej 5 znaków.</div>')
+    statusMessage.append('<div style="color: #ff6347;">Wiadmość powinna zawierać co najmniej 5 znaków.</div>')
     }
 
 if(firstNameVal==true && subjectVal== true && messageVal== true && emailVal== true){
