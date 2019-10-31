@@ -120,14 +120,16 @@ font-size: 10pt;
   padding: 16px;
 }
 
-@media screen and (min-width:1024px){
+@media only screen and (min-width:1024px){
   .sqare:hover{
     opacity: 0.9;
     border-radius: 50%;
   }
 
   .sqare{
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
 }
