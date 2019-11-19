@@ -240,3 +240,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-hover.w3-mobile .mf-dropdown-content,.w3-dropdown-click.w3-mobile .mf-dropdown-content{position:relative}
 .w3-dropdown-hover:hover .mf-dropdown-content{display:block}
 html, body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif}
+/*#main {text-shadow: 5px 5px 0 rgba(0,0,0,1);}*/
